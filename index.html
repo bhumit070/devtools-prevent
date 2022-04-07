@@ -9,15 +9,15 @@
 
     <script type="text/javascript">
       var tryCount = 0;
-      var minimalUserResponseInMiliseconds = 200;
+      var minimalUserResponseInMilliseconds = 200;
 
       function check() {
         console.clear();
         before = new Date().getTime();
         debugger;
         after = new Date().getTime();
-        if (after - before > minimalUserResponseInMiliseconds) {
-          document.write(' Dont open Developer Tools. ');
+        if (after - before > minimalUserResponseInMilliseconds) {
+          document.write('Do not open Developer Tools.');
           self.location.replace(
             window.location.protocol +
               window.location.href.substring(window.location.protocol.length),
